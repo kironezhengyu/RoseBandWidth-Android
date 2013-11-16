@@ -4,17 +4,20 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="17" />
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/graph"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="edu.rose.sprint1.MainActivity"
+            android:name="edu.rose.bandWidthUtil.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,13 +26,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="edu.rose.sprint1.LoginActivity"
+            android:name="edu.rose.bandWidthUtil.LoginActivity"
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
         <activity
-            android:name="edu.rose.sprint1.MainMenu"
+            android:name="edu.rose.bandWidthUtil.MainMenu"
             android:label="@string/title_activity_main_menu" >
+        </activity>
+        <activity
+            android:name="edu.rose.bandWidthUtil.BandWidthUsage"
+            android:label="@string/title_activity_band_width_usage" >
+        </activity>
+        <activity
+            android:name="edu.rose.bandWidthUtil.UsageReportMain"
+            android:label="@string/title_activity_usage_report_main" >
         </activity>
     </application>
 
